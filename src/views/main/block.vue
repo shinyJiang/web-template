@@ -9,6 +9,11 @@ import { mapGetters } from 'vuex'
 export default {
   computed: {
     ...mapGetters(['paramsQuery'])
+  },
+  watch: {
+    paramsQuery(val) {
+      console.log('dd', val)
+    }
   }
 }
 </script>
